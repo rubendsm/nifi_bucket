@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1733218950908,
+    "description" : "Put object on MinIO with tag",
+    "identifier" : "MinIO",
+    "lastModifiedTimestamp" : 1733218950908,
+    "name" : "MinIO",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
