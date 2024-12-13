@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1734110151053,
+    "description" : "",
+    "identifier" : "dockernificontainer",
+    "lastModifiedTimestamp" : 1734110151053,
+    "name" : "docker_nifi_container",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
