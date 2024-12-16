@@ -630,6 +630,36 @@
         "destination" : {
           "comments" : "",
           "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+          "id" : "baf6540c-e285-3a28-b64a-a1ddf009cbf7",
+          "name" : "TagS3Object",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+        "identifier" : "a785a702-926d-35a1-a6c6-f463a66b0e75",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+          "id" : "b71867dd-7839-347a-bbc6-b5bce8450290",
+          "name" : "PutS3ObjectMinIO_new",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 0
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
           "id" : "b71867dd-7839-347a-bbc6-b5bce8450290",
           "name" : "PutS3ObjectMinIO_new",
           "type" : "PROCESSOR"
@@ -655,10 +685,7 @@
       }, {
         "backPressureDataSizeThreshold" : "1 GB",
         "backPressureObjectThreshold" : 10000,
-        "bends" : [ {
-          "x" : 1072.0,
-          "y" : -896.0
-        } ],
+        "bends" : [ ],
         "componentType" : "CONNECTION",
         "destination" : {
           "comments" : "",
@@ -669,14 +696,14 @@
         },
         "flowFileExpiration" : "0 sec",
         "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "a296c079-ddee-3473-b636-cfe0cdc45503",
+        "identifier" : "54b34a08-970a-3814-a59d-b5ecf6c2c69c",
         "labelIndex" : 0,
         "loadBalanceCompression" : "DO_NOT_COMPRESS",
         "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
         "name" : "",
         "partitioningAttribute" : "",
         "prioritizers" : [ ],
-        "selectedRelationships" : [ "failure" ],
+        "selectedRelationships" : [ "original" ],
         "source" : {
           "comments" : "",
           "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
@@ -698,7 +725,7 @@
         },
         "flowFileExpiration" : "0 sec",
         "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "1e8f207b-7719-3a3a-9c69-8d645a0de333",
+        "identifier" : "ca97cad4-b2f7-3749-b4ab-6280f66a1a9d",
         "labelIndex" : 0,
         "loadBalanceCompression" : "DO_NOT_COMPRESS",
         "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -709,15 +736,18 @@
         "source" : {
           "comments" : "",
           "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "b71867dd-7839-347a-bbc6-b5bce8450290",
-          "name" : "PutS3ObjectMinIO_new",
+          "id" : "baf6540c-e285-3a28-b64a-a1ddf009cbf7",
+          "name" : "TagS3Object",
           "type" : "PROCESSOR"
         },
         "zIndex" : 0
       }, {
         "backPressureDataSizeThreshold" : "1 GB",
         "backPressureObjectThreshold" : 10000,
-        "bends" : [ ],
+        "bends" : [ {
+          "x" : -312.0,
+          "y" : -536.0
+        } ],
         "componentType" : "CONNECTION",
         "destination" : {
           "comments" : "",
@@ -728,14 +758,14 @@
         },
         "flowFileExpiration" : "0 sec",
         "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "54b34a08-970a-3814-a59d-b5ecf6c2c69c",
+        "identifier" : "00485357-1b7c-30d3-b658-507587230ca7",
         "labelIndex" : 0,
         "loadBalanceCompression" : "DO_NOT_COMPRESS",
         "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
         "name" : "",
         "partitioningAttribute" : "",
         "prioritizers" : [ ],
-        "selectedRelationships" : [ "original" ],
+        "selectedRelationships" : [ "failure" ],
         "source" : {
           "comments" : "",
           "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
@@ -922,8 +952,8 @@
         "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
         "identifier" : "d314cacd-e7d4-3fec-89fa-596ee64c2fa7",
         "position" : {
-          "x" : 1224.0,
-          "y" : -696.0
+          "x" : -80.0,
+          "y" : -456.0
         }
       } ],
       "groupIdentifier" : "flow-contents-group",
@@ -955,8 +985,8 @@
         "name" : "output",
         "portFunction" : "STANDARD",
         "position" : {
-          "x" : 392.0,
-          "y" : -408.0
+          "x" : -864.0,
+          "y" : 72.0
         },
         "scheduledState" : "ENABLED",
         "type" : "OUTPUT_PORT"
@@ -986,18 +1016,18 @@
         "name" : "TagS3Object",
         "penaltyDuration" : "30 sec",
         "position" : {
-          "x" : -440.0,
-          "y" : -384.0
+          "x" : -920.0,
+          "y" : -232.0
         },
         "properties" : {
           "Endpoint Override URL" : "#{MinIO_URL}",
-          "Object Key" : "#{bucket_folder}/${path}/${filename}",
+          "Object Key" : "${filename}",
           "append-tag" : "true",
           "AWS Credentials Provider service" : "02c67af4-ae44-3383-b4a7-9b295f069873",
-          "tag-value" : "${metadata}",
+          "tag-value" : "nova_tag",
           "Signer Override" : "AWSS3V4SignerType",
-          "Bucket" : "${s3.bucket}",
-          "tag-key" : "metadata",
+          "Bucket" : "#{bucket_name}",
+          "tag-key" : "tag",
           "Communications Timeout" : "30 secs",
           "Region" : "eu-south-2"
         },
@@ -1140,12 +1170,12 @@
         "name" : "PutS3ObjectMinIO_new",
         "penaltyDuration" : "30 sec",
         "position" : {
-          "x" : 336.0,
-          "y" : -960.0
+          "x" : -920.0,
+          "y" : -496.0
         },
         "properties" : {
           "MinIO Endpoint" : "#{MinIO_URL}",
-          "Metadata" : "autor:ruben,from:source_xpto,format:xml,category:new_data",
+          "Metadata" : "autor:mitmynid,from:source_xpto,format:xml,category:new_data",
           "Region Name" : "us-east-1",
           "Content Type" : "text/xml",
           "Bucket Name" : "#{bucket_name}"
@@ -1211,319 +1241,6 @@
         "type" : "PutS3ObjectMinIO_new",
         "yieldDuration" : "1 sec"
       }, {
-        "autoTerminatedRelationships" : [ "failure" ],
-        "backoffMechanism" : "PENALIZE_FLOWFILE",
-        "bulletinLevel" : "WARN",
-        "bundle" : {
-          "artifact" : "nifi-aws-nar",
-          "group" : "org.apache.nifi",
-          "version" : "2.0.0"
-        },
-        "comments" : "",
-        "componentType" : "PROCESSOR",
-        "concurrentlySchedulableTaskCount" : 1,
-        "executionNode" : "ALL",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "a2e69a8d-8b1f-3e0a-976f-76144d30038f",
-        "maxBackoffPeriod" : "10 mins",
-        "name" : "PutS3Object",
-        "penaltyDuration" : "30 sec",
-        "position" : {
-          "x" : -448.0,
-          "y" : -656.0
-        },
-        "properties" : {
-          "FullControl User List" : "${s3.permissions.full.users}",
-          "Owner" : "${s3.owner}",
-          "Resource Transfer Source" : "FLOWFILE_CONTENT",
-          "Cache Control" : "Cache-Control: max-age=3600",
-          "s3-object-remove-tags-prefix" : "false",
-          "Endpoint Override URL" : "#{MinIO_URL}",
-          "File Resource Service" : "779c6430-9384-335d-0620-0f1fca7ddbad",
-          "Multipart Upload Max Age Threshold" : "7 days",
-          "canned-acl" : "${s3.permissions.cannedacl}",
-          "Signer Override" : "AWSS3V4SignerType",
-          "Content Type" : "text/csv",
-          "server-side-encryption" : "None",
-          "Write ACL User List" : "${s3.permissions.writeacl.users}",
-          "Read ACL User List" : "${s3.permissions.readacl.users}",
-          "Storage Class" : "Standard",
-          "Multipart Part Size" : "5 GB",
-          "use-chunked-encoding" : "true",
-          "Object Key" : "#{bucket_folder}/${path}/${filename}",
-          "AWS Credentials Provider service" : "02c67af4-ae44-3383-b4a7-9b295f069873",
-          "Multipart Threshold" : "5 GB",
-          "s3-object-tags-prefix" : "${s3.metadata.author},${s3.metadata.category}",
-          "Bucket" : "#{bucket_name}",
-          "Multipart Upload AgeOff Interval" : "60 min",
-          "use-path-style-access" : "false",
-          "Write Permission User List" : "${s3.permissions.write.users}",
-          "Communications Timeout" : "30 secs",
-          "Region" : "eu-south-2",
-          "Read Permission User List" : "${s3.permissions.read.users}",
-          "s3-temporary-directory-multipart" : "${java.io.tmpdir}"
-        },
-        "propertyDescriptors" : {
-          "FullControl User List" : {
-            "displayName" : "FullControl User List",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "FullControl User List",
-            "sensitive" : false
-          },
-          "Owner" : {
-            "displayName" : "Owner",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Owner",
-            "sensitive" : false
-          },
-          "proxy-configuration-service" : {
-            "displayName" : "Proxy Configuration Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "proxy-configuration-service",
-            "sensitive" : false
-          },
-          "Resource Transfer Source" : {
-            "displayName" : "Resource Transfer Source",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Resource Transfer Source",
-            "sensitive" : false
-          },
-          "Cache Control" : {
-            "displayName" : "Cache Control",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Cache Control",
-            "sensitive" : false
-          },
-          "s3-object-remove-tags-prefix" : {
-            "displayName" : "Remove Tag Prefix",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "s3-object-remove-tags-prefix",
-            "sensitive" : false
-          },
-          "Endpoint Override URL" : {
-            "displayName" : "Endpoint Override URL",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Endpoint Override URL",
-            "sensitive" : false
-          },
-          "Multipart Upload Max Age Threshold" : {
-            "displayName" : "Multipart Upload Max Age Threshold",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Multipart Upload Max Age Threshold",
-            "sensitive" : false
-          },
-          "custom-signer-class-name" : {
-            "displayName" : "Custom Signer Class Name",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "custom-signer-class-name",
-            "sensitive" : false
-          },
-          "canned-acl" : {
-            "displayName" : "Canned ACL",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "canned-acl",
-            "sensitive" : false
-          },
-          "custom-signer-module-location" : {
-            "displayName" : "Custom Signer Module Location",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "custom-signer-module-location",
-            "resourceDefinition" : {
-              "cardinality" : "MULTIPLE",
-              "resourceTypes" : [ "DIRECTORY", "FILE" ]
-            },
-            "sensitive" : false
-          },
-          "Signer Override" : {
-            "displayName" : "Signer Override",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Signer Override",
-            "sensitive" : false
-          },
-          "Content Type" : {
-            "displayName" : "Content Type",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Content Type",
-            "sensitive" : false
-          },
-          "server-side-encryption" : {
-            "displayName" : "Server Side Encryption",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "server-side-encryption",
-            "sensitive" : false
-          },
-          "Write ACL User List" : {
-            "displayName" : "Write ACL User List",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Write ACL User List",
-            "sensitive" : false
-          },
-          "encryption-service" : {
-            "displayName" : "Encryption Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "encryption-service",
-            "sensitive" : false
-          },
-          "Read ACL User List" : {
-            "displayName" : "Read ACL User List",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Read ACL User List",
-            "sensitive" : false
-          },
-          "Content Disposition" : {
-            "displayName" : "Content Disposition",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Content Disposition",
-            "sensitive" : false
-          },
-          "Storage Class" : {
-            "displayName" : "Storage Class",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Storage Class",
-            "sensitive" : false
-          },
-          "Multipart Part Size" : {
-            "displayName" : "Multipart Part Size",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Multipart Part Size",
-            "sensitive" : false
-          },
-          "use-chunked-encoding" : {
-            "displayName" : "Use Chunked Encoding",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "use-chunked-encoding",
-            "sensitive" : false
-          },
-          "Object Key" : {
-            "displayName" : "Object Key",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
-          "Multipart Threshold" : {
-            "displayName" : "Multipart Threshold",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Multipart Threshold",
-            "sensitive" : false
-          },
-          "s3-object-tags-prefix" : {
-            "displayName" : "Object Tags Prefix",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "s3-object-tags-prefix",
-            "sensitive" : false
-          },
-          "SSL Context Service" : {
-            "displayName" : "SSL Context Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "SSL Context Service",
-            "sensitive" : false
-          },
-          "Bucket" : {
-            "displayName" : "Bucket",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Bucket",
-            "sensitive" : false
-          },
-          "Multipart Upload AgeOff Interval" : {
-            "displayName" : "Multipart Upload AgeOff Interval",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Multipart Upload AgeOff Interval",
-            "sensitive" : false
-          },
-          "use-path-style-access" : {
-            "displayName" : "Use Path Style Access",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "use-path-style-access",
-            "sensitive" : false
-          },
-          "Write Permission User List" : {
-            "displayName" : "Write Permission User List",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Write Permission User List",
-            "sensitive" : false
-          },
-          "Communications Timeout" : {
-            "displayName" : "Communications Timeout",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Communications Timeout",
-            "sensitive" : false
-          },
-          "Region" : {
-            "displayName" : "Region",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Region",
-            "sensitive" : false
-          },
-          "Read Permission User List" : {
-            "displayName" : "Read Permission User List",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Read Permission User List",
-            "sensitive" : false
-          },
-          "Expiration Time Rule" : {
-            "displayName" : "Expiration Time Rule",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Expiration Time Rule",
-            "sensitive" : false
-          },
-          "s3-temporary-directory-multipart" : {
-            "displayName" : "Temporary Directory Multipart State",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "s3-temporary-directory-multipart",
-            "sensitive" : false
-          }
-        },
-        "retriedRelationships" : [ ],
-        "retryCount" : 10,
-        "runDurationMillis" : 0,
-        "scheduledState" : "ENABLED",
-        "schedulingPeriod" : "0 sec",
-        "schedulingStrategy" : "TIMER_DRIVEN",
-        "style" : { },
-        "type" : "org.apache.nifi.processors.aws.s3.PutS3Object",
-        "yieldDuration" : "1 sec"
-      }, {
         "autoTerminatedRelationships" : [ ],
         "backoffMechanism" : "PENALIZE_FLOWFILE",
         "bulletinLevel" : "WARN",
@@ -1542,11 +1259,11 @@
         "name" : "UpdateAttribute",
         "penaltyDuration" : "30 sec",
         "position" : {
-          "x" : -336.0,
-          "y" : -1000.0
+          "x" : -912.0,
+          "y" : -760.0
         },
         "properties" : {
-          "filename" : "${now():format('yyyy/MM/dd')}/${uuid}.xml",
+          "filename" : "${now():format('yyyy/MM/dd')}/${uuid}",
           "Store State" : "Do not store state",
           "canonical-value-lookup-cache-size" : "100"
         },
@@ -1611,13 +1328,13 @@
         "destination" : {
           "comments" : "",
           "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-          "id" : "89924871-8503-30e0-ba76-80ef73f12933",
-          "name" : "FetchS3Object",
+          "id" : "f6f5a6d2-c831-36c1-a304-17ffeaeae39c",
+          "name" : "GetS3ObjectMetadata",
           "type" : "PROCESSOR"
         },
         "flowFileExpiration" : "0 sec",
         "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-        "identifier" : "14651918-082b-375e-a32d-0bd66e4f0951",
+        "identifier" : "6c6ed1a4-12d6-303c-bb68-ce9a5c77d7aa",
         "labelIndex" : 0,
         "loadBalanceCompression" : "DO_NOT_COMPRESS",
         "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -1630,66 +1347,6 @@
           "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
           "id" : "8cd7c93e-a34e-31bd-b514-2c426ab2a749",
           "name" : "ListS3",
-          "type" : "PROCESSOR"
-        },
-        "zIndex" : 0
-      }, {
-        "backPressureDataSizeThreshold" : "1 GB",
-        "backPressureObjectThreshold" : 10000,
-        "bends" : [ ],
-        "componentType" : "CONNECTION",
-        "destination" : {
-          "comments" : "",
-          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-          "id" : "aac5ab13-f187-38e3-b88e-bda22373d41b",
-          "name" : "Filtrar por tag",
-          "type" : "PROCESSOR"
-        },
-        "flowFileExpiration" : "0 sec",
-        "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-        "identifier" : "48cb3b51-b504-31f0-ac50-6556c2ebf376",
-        "labelIndex" : 0,
-        "loadBalanceCompression" : "DO_NOT_COMPRESS",
-        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-        "name" : "",
-        "partitioningAttribute" : "",
-        "prioritizers" : [ ],
-        "selectedRelationships" : [ "success" ],
-        "source" : {
-          "comments" : "",
-          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-          "id" : "8cd7c93e-a34e-31bd-b514-2c426ab2a749",
-          "name" : "ListS3",
-          "type" : "PROCESSOR"
-        },
-        "zIndex" : 0
-      }, {
-        "backPressureDataSizeThreshold" : "1 GB",
-        "backPressureObjectThreshold" : 10000,
-        "bends" : [ ],
-        "componentType" : "CONNECTION",
-        "destination" : {
-          "comments" : "",
-          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-          "id" : "89924871-8503-30e0-ba76-80ef73f12933",
-          "name" : "FetchS3Object",
-          "type" : "PROCESSOR"
-        },
-        "flowFileExpiration" : "0 sec",
-        "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-        "identifier" : "900dfa3f-a76f-30ba-a8ef-a8773e1e955e",
-        "labelIndex" : 0,
-        "loadBalanceCompression" : "DO_NOT_COMPRESS",
-        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-        "name" : "",
-        "partitioningAttribute" : "",
-        "prioritizers" : [ ],
-        "selectedRelationships" : [ "searchMetadata" ],
-        "source" : {
-          "comments" : "",
-          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-          "id" : "aac5ab13-f187-38e3-b88e-bda22373d41b",
-          "name" : "Filtrar por tag",
           "type" : "PROCESSOR"
         },
         "zIndex" : 0
@@ -1707,7 +1364,7 @@
         },
         "flowFileExpiration" : "0 sec",
         "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-        "identifier" : "f89d5576-8e04-3404-9f82-83804d4abc20",
+        "identifier" : "298d28fc-d21a-3b96-a4f0-ac20e8472c0a",
         "labelIndex" : 0,
         "loadBalanceCompression" : "DO_NOT_COMPRESS",
         "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -1718,8 +1375,68 @@
         "source" : {
           "comments" : "",
           "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-          "id" : "955e29b9-ff3f-3b2b-8b3e-446f90a9e52c",
-          "name" : "ConvertRecord",
+          "id" : "89924871-8503-30e0-ba76-80ef73f12933",
+          "name" : "FetchS3Object",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 0
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
+          "id" : "aac5ab13-f187-38e3-b88e-bda22373d41b",
+          "name" : "Filtrar por tag & metadado",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
+        "identifier" : "c1b96445-adcf-337a-b876-81c871dae458",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "found" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
+          "id" : "f6f5a6d2-c831-36c1-a304-17ffeaeae39c",
+          "name" : "GetS3ObjectMetadata",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 0
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
+          "id" : "89924871-8503-30e0-ba76-80ef73f12933",
+          "name" : "FetchS3Object",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
+        "identifier" : "27528499-3594-3829-a7a3-bf3501415282",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "matched" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
+          "id" : "aac5ab13-f187-38e3-b88e-bda22373d41b",
+          "name" : "Filtrar por tag & metadado",
           "type" : "PROCESSOR"
         },
         "zIndex" : 0
@@ -1727,11 +1444,47 @@
         "backPressureDataSizeThreshold" : "1 GB",
         "backPressureObjectThreshold" : 10000,
         "bends" : [ {
-          "x" : 336.0,
-          "y" : 96.0
+          "x" : 329.4024658203125,
+          "y" : 674.3746337890625
         }, {
-          "x" : 328.0,
-          "y" : 176.0
+          "x" : 278.4024658203125,
+          "y" : 715.3746337890625
+        } ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
+          "id" : "6e7c94b3-81ca-3047-a780-3bae57457274",
+          "name" : "PutDatabaseRecord",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
+        "identifier" : "d2fb4b28-08ff-33b8-a265-6a8f65ba2e21",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "failure" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
+          "id" : "6e7c94b3-81ca-3047-a780-3bae57457274",
+          "name" : "PutDatabaseRecord",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 0
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ {
+          "x" : 324.71305322647095,
+          "y" : 206.89261627197266
+        }, {
+          "x" : 316.71305322647095,
+          "y" : 286.89261627197266
         } ],
         "componentType" : "CONNECTION",
         "destination" : {
@@ -1751,36 +1504,6 @@
         "partitioningAttribute" : "",
         "prioritizers" : [ ],
         "selectedRelationships" : [ "failure" ],
-        "source" : {
-          "comments" : "",
-          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-          "id" : "89924871-8503-30e0-ba76-80ef73f12933",
-          "name" : "FetchS3Object",
-          "type" : "PROCESSOR"
-        },
-        "zIndex" : 0
-      }, {
-        "backPressureDataSizeThreshold" : "1 GB",
-        "backPressureObjectThreshold" : 10000,
-        "bends" : [ ],
-        "componentType" : "CONNECTION",
-        "destination" : {
-          "comments" : "",
-          "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-          "id" : "955e29b9-ff3f-3b2b-8b3e-446f90a9e52c",
-          "name" : "ConvertRecord",
-          "type" : "PROCESSOR"
-        },
-        "flowFileExpiration" : "0 sec",
-        "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-        "identifier" : "460c643c-2011-32c0-a957-b9ac31916250",
-        "labelIndex" : 0,
-        "loadBalanceCompression" : "DO_NOT_COMPRESS",
-        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-        "name" : "",
-        "partitioningAttribute" : "",
-        "prioritizers" : [ ],
-        "selectedRelationships" : [ "success" ],
         "source" : {
           "comments" : "",
           "groupId" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
@@ -2431,11 +2154,13 @@
         "identifier" : "20a8eb11-b873-3b69-b9a8-3d34e52cd551",
         "name" : "XMLReader",
         "properties" : {
+          "Timestamp Format" : "dd/MM/yyyy",
+          "Date Format" : "dd/MM/yyyy",
           "parse_xml_attributes" : "true",
-          "record_format" : "false",
+          "record_format" : "true",
           "schema-name" : "${schema.name}",
           "schema-access-strategy" : "schema-text-property",
-          "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"Shipment\",\n  \"fields\": [\n    {\"name\": \"ship\", \"type\": \"string\"},\n    {\"name\": \"eta\", \"type\": \"string\"},\n    {\"name\": \"etd\", \"type\": \"string\"},\n    {\"name\": \"num_processo\", \"type\": \"string\"},\n    {\"name\": \"porto_origem\", \"type\": \"string\"},\n    {\"name\": \"porto_destino\", \"type\": \"string\"},\n    {\"name\": \"container\", \"type\": \"string\"}\n  ]\n}"
+          "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"ShipmentRecord\",\n  \"fields\": [\n    {\"name\": \"ship\", \"type\": \"string\"},\n    {\"name\": \"eta\", \"type\": { \"type\":\"int\", \"logicalType\":\"date\"}},\n    {\"name\": \"etd\", \"type\": { \"type\":\"int\", \"logicalType\":\"date\"}},\n    {\"name\": \"num_processo\", \"type\": \"string\"},\n    {\"name\": \"porto_origem\", \"type\": \"string\"},\n    {\"name\": \"porto_destino\", \"type\": \"string\"},\n    {\"name\": \"container\", \"type\": \"string\"}\n  ]\n}"
         },
         "propertyDescriptors" : {
           "schema-reference-reader" : {
@@ -2778,8 +2503,8 @@
         "name" : "output",
         "portFunction" : "STANDARD",
         "position" : {
-          "x" : -128.0,
-          "y" : 736.0
+          "x" : -136.0,
+          "y" : 960.0
         },
         "scheduledState" : "ENABLED",
         "type" : "OUTPUT_PORT"
@@ -2791,65 +2516,6 @@
       },
       "processGroups" : [ ],
       "processors" : [ {
-        "autoTerminatedRelationships" : [ "failure" ],
-        "backoffMechanism" : "PENALIZE_FLOWFILE",
-        "bulletinLevel" : "WARN",
-        "bundle" : {
-          "artifact" : "nifi-standard-nar",
-          "group" : "org.apache.nifi",
-          "version" : "2.0.0"
-        },
-        "comments" : "",
-        "componentType" : "PROCESSOR",
-        "concurrentlySchedulableTaskCount" : 1,
-        "executionNode" : "ALL",
-        "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
-        "identifier" : "955e29b9-ff3f-3b2b-8b3e-446f90a9e52c",
-        "maxBackoffPeriod" : "10 mins",
-        "name" : "ConvertRecord",
-        "penaltyDuration" : "30 sec",
-        "position" : {
-          "x" : -848.0,
-          "y" : 192.0
-        },
-        "properties" : {
-          "Include Zero Record FlowFiles" : "true",
-          "Record Writer" : "085e9366-cd3b-3877-9ea6-75f70830939c",
-          "Record Reader" : "20a8eb11-b873-3b69-b9a8-3d34e52cd551"
-        },
-        "propertyDescriptors" : {
-          "Include Zero Record FlowFiles" : {
-            "displayName" : "Include Zero Record FlowFiles",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Include Zero Record FlowFiles",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          }
-        },
-        "retriedRelationships" : [ ],
-        "retryCount" : 10,
-        "runDurationMillis" : 0,
-        "scheduledState" : "ENABLED",
-        "schedulingPeriod" : "0 sec",
-        "schedulingStrategy" : "TIMER_DRIVEN",
-        "style" : { },
-        "type" : "org.apache.nifi.processors.standard.ConvertRecord",
-        "yieldDuration" : "1 sec"
-      }, {
         "autoTerminatedRelationships" : [ ],
         "backoffMechanism" : "PENALIZE_FLOWFILE",
         "bulletinLevel" : "WARN",
@@ -2868,8 +2534,8 @@
         "name" : "FetchS3Object",
         "penaltyDuration" : "30 sec",
         "position" : {
-          "x" : -184.0,
-          "y" : 56.0
+          "x" : -192.0,
+          "y" : 168.0
         },
         "properties" : {
           "Endpoint Override URL" : "#{MinIO_URL}",
@@ -3400,13 +3066,13 @@
         "name" : "ListS3",
         "penaltyDuration" : "30 sec",
         "position" : {
-          "x" : -184.0,
-          "y" : -544.0
+          "x" : -192.0,
+          "y" : -928.0
         },
         "properties" : {
           "list-type" : "1",
           "et-initial-listing-target" : "all",
-          "prefix" : "shipdata",
+          "prefix" : "2024/12/16",
           "Endpoint Override URL" : "#{MinIO_URL}",
           "et-time-window" : "3 hours",
           "requester-pays" : "false",
@@ -3622,29 +3288,37 @@
         "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
         "identifier" : "aac5ab13-f187-38e3-b88e-bda22373d41b",
         "maxBackoffPeriod" : "10 mins",
-        "name" : "Filtrar por tag",
+        "name" : "Filtrar por tag & metadado",
         "penaltyDuration" : "30 sec",
         "position" : {
-          "x" : -576.0,
-          "y" : -200.0
+          "x" : -192.0,
+          "y" : -216.0
         },
         "properties" : {
-          "searchMetadata" : "${s3.tag.metadata:equals(#{searchByMetadata_tag})}",
-          "Routing Strategy" : "Route to Property name"
+          "Routing Strategy" : "Route to 'match' if all match",
+          "s3.autor" : "${s3.autor:equals(\"mitmynid\")}",
+          "s3.tag.tag" : "${s3.tag.tag:equals(\"nova_tag\")}"
         },
         "propertyDescriptors" : {
-          "searchMetadata" : {
-            "displayName" : "searchMetadata",
-            "dynamic" : true,
-            "identifiesControllerService" : false,
-            "name" : "searchMetadata",
-            "sensitive" : false
-          },
           "Routing Strategy" : {
             "displayName" : "Routing Strategy",
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Routing Strategy",
+            "sensitive" : false
+          },
+          "s3.autor" : {
+            "displayName" : "s3.autor",
+            "dynamic" : true,
+            "identifiesControllerService" : false,
+            "name" : "s3.autor",
+            "sensitive" : false
+          },
+          "s3.tag.tag" : {
+            "displayName" : "s3.tag.tag",
+            "dynamic" : true,
+            "identifiesControllerService" : false,
+            "name" : "s3.tag.tag",
             "sensitive" : false
           }
         },
@@ -3658,7 +3332,178 @@
         "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
         "yieldDuration" : "1 sec"
       }, {
-        "autoTerminatedRelationships" : [ "failure", "retry" ],
+        "autoTerminatedRelationships" : [ "failure", "not found" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-aws-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.0.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
+        "identifier" : "f6f5a6d2-c831-36c1-a304-17ffeaeae39c",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "GetS3ObjectMetadata",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : -192.0,
+          "y" : -600.0
+        },
+        "properties" : {
+          "FullControl User List" : "${s3.permissions.full.users}",
+          "Owner" : "${s3.owner}",
+          "Endpoint Override URL" : "#{MinIO_URL}",
+          "Object Key" : "${filename}",
+          "AWS Credentials Provider service" : "16d3f64d-301e-3663-8017-41abfe3751a8",
+          "Metadata Target" : "ATTRIBUTES",
+          "Signer Override" : "AWSS3V4SignerType",
+          "Bucket" : "#{bucket_name}",
+          "Communications Timeout" : "30 secs",
+          "Region" : "us-west-2",
+          "Read Permission User List" : "${s3.permissions.read.users}",
+          "Metadata Attribute Include Pattern" : ".*",
+          "Read ACL User List" : "${s3.permissions.readacl.users}"
+        },
+        "propertyDescriptors" : {
+          "FullControl User List" : {
+            "displayName" : "FullControl User List",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "FullControl User List",
+            "sensitive" : false
+          },
+          "Owner" : {
+            "displayName" : "Owner",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Owner",
+            "sensitive" : false
+          },
+          "proxy-configuration-service" : {
+            "displayName" : "Proxy Configuration Service",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "proxy-configuration-service",
+            "sensitive" : false
+          },
+          "Endpoint Override URL" : {
+            "displayName" : "Endpoint Override URL",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Endpoint Override URL",
+            "sensitive" : false
+          },
+          "custom-signer-class-name" : {
+            "displayName" : "Custom Signer Class Name",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "custom-signer-class-name",
+            "sensitive" : false
+          },
+          "Object Key" : {
+            "displayName" : "Object Key",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Object Key",
+            "sensitive" : false
+          },
+          "AWS Credentials Provider service" : {
+            "displayName" : "AWS Credentials Provider Service",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "AWS Credentials Provider service",
+            "sensitive" : false
+          },
+          "custom-signer-module-location" : {
+            "displayName" : "Custom Signer Module Location",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "custom-signer-module-location",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "SSL Context Service" : {
+            "displayName" : "SSL Context Service",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "SSL Context Service",
+            "sensitive" : false
+          },
+          "Metadata Target" : {
+            "displayName" : "Metadata Target",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Metadata Target",
+            "sensitive" : false
+          },
+          "Signer Override" : {
+            "displayName" : "Signer Override",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Signer Override",
+            "sensitive" : false
+          },
+          "Bucket" : {
+            "displayName" : "Bucket",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Bucket",
+            "sensitive" : false
+          },
+          "Communications Timeout" : {
+            "displayName" : "Communications Timeout",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Communications Timeout",
+            "sensitive" : false
+          },
+          "Region" : {
+            "displayName" : "Region",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Region",
+            "sensitive" : false
+          },
+          "Read Permission User List" : {
+            "displayName" : "Read Permission User List",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Read Permission User List",
+            "sensitive" : false
+          },
+          "Metadata Attribute Include Pattern" : {
+            "displayName" : "Metadata Attribute Include Pattern",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Metadata Attribute Include Pattern",
+            "sensitive" : false
+          },
+          "Read ACL User List" : {
+            "displayName" : "Read ACL User List",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Read ACL User List",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.aws.s3.GetS3ObjectMetadata",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "retry" ],
         "backoffMechanism" : "PENALIZE_FLOWFILE",
         "bulletinLevel" : "WARN",
         "bundle" : {
@@ -3676,8 +3521,8 @@
         "name" : "PutDatabaseRecord",
         "penaltyDuration" : "30 sec",
         "position" : {
-          "x" : -184.0,
-          "y" : 344.0
+          "x" : -192.0,
+          "y" : 624.0
         },
         "properties" : {
           "put-db-record-allow-multiple-statements" : "false",
@@ -3694,9 +3539,9 @@
           "db-type" : "PostgreSQL",
           "put-db-record-quoted-identifiers" : "false",
           "put-db-record-table-name" : "container",
-          "put-db-record-unmatched-field-behavior" : "Ignore Unmatched Fields",
+          "put-db-record-unmatched-field-behavior" : "Fail on Unmatched Fields",
           "put-db-record-max-batch-size" : "1000",
-          "put-db-record-record-reader" : "d8dde2f8-165a-34dc-8d0f-ee4782b94520",
+          "put-db-record-record-reader" : "20a8eb11-b873-3b69-b9a8-3d34e52cd551",
           "database-session-autocommit" : "false"
         },
         "propertyDescriptors" : {
@@ -5522,7 +5367,7 @@
         "name" : "bucket_name",
         "provided" : false,
         "sensitive" : false,
-        "value" : "shipdata"
+        "value" : "rawdata"
       }, {
         "description" : "Valor da tag para pesquisar o valor de metadata_tag no objeto do MinIO",
         "name" : "searchByMetadata_tag",
