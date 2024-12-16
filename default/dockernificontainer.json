@@ -438,8 +438,8 @@
       "identifier" : "5cbb2f90-1053-3fd5-8987-406898fa84be",
       "label" : "INGESTÃO DE DADOS PARA O PostgreSQL",
       "position" : {
-        "x" : 152.0,
-        "y" : -1992.0
+        "x" : 192.0,
+        "y" : -1472.0
       },
       "style" : {
         "background-color" : "#fa6400",
