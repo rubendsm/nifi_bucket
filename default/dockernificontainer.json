@@ -601,6 +601,36 @@
         "destination" : {
           "comments" : "",
           "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+          "id" : "308a2cda-5ce3-3812-9b4c-3a8189dc8a51",
+          "name" : "Funnel",
+          "type" : "FUNNEL"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+        "identifier" : "61beab7b-2388-39d5-8f89-093091f205fc",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "failure" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+          "id" : "0b2eb48a-49e4-3201-b44a-ba1572a98fce",
+          "name" : "PutS3ObjectMinIO",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 0
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
           "id" : "ee9966b9-5c9c-3748-b098-94619d2c3345",
           "name" : "UpdateAttribute",
           "type" : "PROCESSOR"
@@ -608,6 +638,35 @@
         "flowFileExpiration" : "0 sec",
         "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
         "identifier" : "1bfc1722-4f3a-3529-92f8-fd34886b7bf8",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "" ],
+        "source" : {
+          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+          "id" : "023b66c5-05d0-3688-a16c-788548a7b850",
+          "name" : "getFile",
+          "type" : "INPUT_PORT"
+        },
+        "zIndex" : 0
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+          "id" : "0b2eb48a-49e4-3201-b44a-ba1572a98fce",
+          "name" : "PutS3ObjectMinIO",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+        "identifier" : "800c75a5-6416-322c-a213-a065376689b2",
         "labelIndex" : 0,
         "loadBalanceCompression" : "DO_NOT_COMPRESS",
         "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -748,6 +807,36 @@
         "bends" : [ ],
         "componentType" : "CONNECTION",
         "destination" : {
+          "comments" : "",
+          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+          "id" : "baf6540c-e285-3a28-b64a-a1ddf009cbf7",
+          "name" : "TagS3Object",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+        "identifier" : "dc7e0c7c-77d4-3bdd-96b2-b4f6e362a3dc",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+          "id" : "0b2eb48a-49e4-3201-b44a-ba1572a98fce",
+          "name" : "PutS3ObjectMinIO",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 0
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
           "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
           "id" : "da7f7791-3f72-307d-a681-88a48b0fd6e2",
           "name" : "output",
@@ -850,14 +939,179 @@
             "group" : "org.apache.nifi",
             "version" : "2.0.0"
           },
-          "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
+          "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
         }, {
           "bundle" : {
             "artifact" : "nifi-aws-service-api-nar",
             "group" : "org.apache.nifi",
             "version" : "2.0.0"
           },
+          "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
+        } ],
+        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+        "identifier" : "06d4e75d-35b5-3e25-86e2-19cf605b5480",
+        "name" : "AWSCredentialsProviderControllerService",
+        "properties" : {
+          "default-credentials" : "false",
+          "Session Time" : "3600",
+          "assume-role-sts-signer-override" : "Default Signature",
+          "assume-role-sts-region" : "us-west-2",
+          "anonymous-credentials" : "true"
+        },
+        "propertyDescriptors" : {
+          "profile-name" : {
+            "displayName" : "Profile Name",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "profile-name",
+            "sensitive" : false
+          },
+          "Access Key" : {
+            "displayName" : "Access Key ID",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Access Key",
+            "sensitive" : true
+          },
+          "assume-role-proxy-configuration-service" : {
+            "displayName" : "Assume Role Proxy Configuration Service",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "assume-role-proxy-configuration-service",
+            "sensitive" : false
+          },
+          "default-credentials" : {
+            "displayName" : "Use Default Credentials",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "default-credentials",
+            "sensitive" : false
+          },
+          "Session Time" : {
+            "displayName" : "Assume Role Session Time",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Session Time",
+            "sensitive" : false
+          },
+          "assume-role-ssl-context-service" : {
+            "displayName" : "Assume Role SSL Context Service",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "assume-role-ssl-context-service",
+            "sensitive" : false
+          },
+          "assume-role-sts-signer-override" : {
+            "displayName" : "Assume Role STS Signer Override",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "assume-role-sts-signer-override",
+            "sensitive" : false
+          },
+          "custom-signer-class-name" : {
+            "displayName" : "Custom Signer Class Name",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "custom-signer-class-name",
+            "sensitive" : false
+          },
+          "Assume Role ARN" : {
+            "displayName" : "Assume Role ARN",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Assume Role ARN",
+            "sensitive" : false
+          },
+          "custom-signer-module-location" : {
+            "displayName" : "Custom Signer Module Location",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "custom-signer-module-location",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "FILE", "DIRECTORY" ]
+            },
+            "sensitive" : false
+          },
+          "Assume Role Session Name" : {
+            "displayName" : "Assume Role Session Name",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Assume Role Session Name",
+            "sensitive" : false
+          },
+          "assume-role-sts-endpoint" : {
+            "displayName" : "Assume Role STS Endpoint Override",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "assume-role-sts-endpoint",
+            "sensitive" : false
+          },
+          "assume-role-sts-region" : {
+            "displayName" : "Assume Role STS Region",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "assume-role-sts-region",
+            "sensitive" : false
+          },
+          "Secret Key" : {
+            "displayName" : "Secret Access Key",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Secret Key",
+            "sensitive" : true
+          },
+          "Credentials File" : {
+            "displayName" : "Credentials File",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Credentials File",
+            "resourceDefinition" : {
+              "cardinality" : "SINGLE",
+              "resourceTypes" : [ "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "assume-role-external-id" : {
+            "displayName" : "Assume Role External ID",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "assume-role-external-id",
+            "sensitive" : false
+          },
+          "anonymous-credentials" : {
+            "displayName" : "Use Anonymous Credentials",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "anonymous-credentials",
+            "sensitive" : false
+          }
+        },
+        "scheduledState" : "DISABLED",
+        "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderControllerService"
+      }, {
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-aws-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.0.0"
+        },
+        "comments" : "",
+        "componentType" : "CONTROLLER_SERVICE",
+        "controllerServiceApis" : [ {
+          "bundle" : {
+            "artifact" : "nifi-aws-service-api-nar",
+            "group" : "org.apache.nifi",
+            "version" : "2.0.0"
+          },
           "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
+        }, {
+          "bundle" : {
+            "artifact" : "nifi-aws-service-api-nar",
+            "group" : "org.apache.nifi",
+            "version" : "2.0.0"
+          },
+          "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
         } ],
         "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
         "identifier" : "02c67af4-ae44-3383-b4a7-9b295f069873",
@@ -1008,6 +1262,14 @@
       "flowFileConcurrency" : "UNBOUNDED",
       "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
       "funnels" : [ {
+        "componentType" : "FUNNEL",
+        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+        "identifier" : "308a2cda-5ce3-3812-9b4c-3a8189dc8a51",
+        "position" : {
+          "x" : -2454.0093089027487,
+          "y" : -468.28666630240764
+        }
+      }, {
         "componentType" : "FUNNEL",
         "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
         "identifier" : "d314cacd-e7d4-3fec-89fa-596ee64c2fa7",
@@ -1230,8 +1492,8 @@
         "name" : "PutS3ObjectMinIO_new",
         "penaltyDuration" : "30 sec",
         "position" : {
-          "x" : -920.0,
-          "y" : -496.0
+          "x" : -936.0,
+          "y" : -512.0
         },
         "properties" : {
           "MinIO Endpoint" : "#{MinIO_URL}",
@@ -1372,6 +1634,103 @@
         "schedulingStrategy" : "TIMER_DRIVEN",
         "style" : { },
         "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-PutS3ObjectMinIO-nar",
+          "group" : "com.mitmynid.nifi",
+          "version" : "2.0.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
+        "identifier" : "0b2eb48a-49e4-3201-b44a-ba1572a98fce",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "PutS3ObjectMinIO",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : -2104.0,
+          "y" : -528.0
+        },
+        "properties" : {
+          "MinIO Endpoint" : "#{MinIO_URL}",
+          "Metadata" : "autor:ruben,filename:${filename},mime.type:${mime.type},uuid:${uuid},date:${now():format(\"dd/MM/yyyy\")}",
+          "Content Type" : "text/xml",
+          "Region" : "us-east-1",
+          "Bucket Name" : "#{bucket_name}",
+          "Object Key" : "${now():format('yyyy/MM/dd')}/${uuid}"
+        },
+        "propertyDescriptors" : {
+          "Access Key" : {
+            "displayName" : "Access Key",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Access Key",
+            "sensitive" : true
+          },
+          "MinIO Endpoint" : {
+            "displayName" : "MinIO Endpoint",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "MinIO Endpoint",
+            "sensitive" : false
+          },
+          "Metadata" : {
+            "displayName" : "Metadata",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Metadata",
+            "sensitive" : false
+          },
+          "Content Type" : {
+            "displayName" : "Content Type",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Content Type",
+            "sensitive" : false
+          },
+          "Secret Key" : {
+            "displayName" : "Secret Key",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Secret Key",
+            "sensitive" : true
+          },
+          "Region" : {
+            "displayName" : "Region",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Region",
+            "sensitive" : false
+          },
+          "Bucket Name" : {
+            "displayName" : "Bucket Name",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Bucket Name",
+            "sensitive" : false
+          },
+          "Object Key" : {
+            "displayName" : "Object Key",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Object Key",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "com.mitmynid.nifi.processors.PutS3ObjectMinIO.PutS3ObjectMinIO",
         "yieldDuration" : "1 sec"
       }, {
         "autoTerminatedRelationships" : [ "failure" ],
@@ -1985,14 +2344,14 @@
             "group" : "org.apache.nifi",
             "version" : "2.0.0"
           },
-          "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
+          "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
         }, {
           "bundle" : {
             "artifact" : "nifi-aws-service-api-nar",
             "group" : "org.apache.nifi",
             "version" : "2.0.0"
           },
-          "type" : "org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService"
+          "type" : "org.apache.nifi.processors.aws.credentials.provider.AwsCredentialsProviderService"
         } ],
         "groupIdentifier" : "d0ad8800-8e93-3b94-856f-97b2e5ea0583",
         "identifier" : "16d3f64d-301e-3663-8017-41abfe3751a8",
@@ -2261,7 +2620,7 @@
             "name" : "database-driver-locations",
             "resourceDefinition" : {
               "cardinality" : "MULTIPLE",
-              "resourceTypes" : [ "URL", "FILE", "DIRECTORY" ]
+              "resourceTypes" : [ "FILE", "URL", "DIRECTORY" ]
             },
             "sensitive" : false
           },
@@ -4326,7 +4685,7 @@
             "name" : "Footer File",
             "resourceDefinition" : {
               "cardinality" : "SINGLE",
-              "resourceTypes" : [ "TEXT", "FILE" ]
+              "resourceTypes" : [ "FILE", "TEXT" ]
             },
             "sensitive" : false
           },
@@ -4344,7 +4703,7 @@
             "name" : "Demarcator File",
             "resourceDefinition" : {
               "cardinality" : "SINGLE",
-              "resourceTypes" : [ "TEXT", "FILE" ]
+              "resourceTypes" : [ "FILE", "TEXT" ]
             },
             "sensitive" : false
           },
@@ -4362,7 +4721,7 @@
             "name" : "Header File",
             "resourceDefinition" : {
               "cardinality" : "SINGLE",
-              "resourceTypes" : [ "TEXT", "FILE" ]
+              "resourceTypes" : [ "FILE", "TEXT" ]
             },
             "sensitive" : false
           },
@@ -4671,7 +5030,7 @@
             "name" : "database-driver-locations",
             "resourceDefinition" : {
               "cardinality" : "MULTIPLE",
-              "resourceTypes" : [ "URL", "FILE", "DIRECTORY" ]
+              "resourceTypes" : [ "FILE", "URL", "DIRECTORY" ]
             },
             "sensitive" : false
           },
@@ -5464,7 +5823,7 @@
       "retryCount" : 10,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "100 min",
+      "schedulingPeriod" : "1 sec",
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
@@ -5522,7 +5881,7 @@
         "name" : "bucket_name",
         "provided" : false,
         "sensitive" : false,
-        "value" : "rawdata"
+        "value" : "shipdata"
       }, {
         "description" : "Autor dos objetos que vão para o MinIO",
         "name" : "metadata_author",
