@@ -631,35 +631,6 @@
         "destination" : {
           "comments" : "",
           "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "ee9966b9-5c9c-3748-b098-94619d2c3345",
-          "name" : "UpdateAttribute",
-          "type" : "PROCESSOR"
-        },
-        "flowFileExpiration" : "0 sec",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "1bfc1722-4f3a-3529-92f8-fd34886b7bf8",
-        "labelIndex" : 0,
-        "loadBalanceCompression" : "DO_NOT_COMPRESS",
-        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-        "name" : "",
-        "partitioningAttribute" : "",
-        "prioritizers" : [ ],
-        "selectedRelationships" : [ "" ],
-        "source" : {
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "023b66c5-05d0-3688-a16c-788548a7b850",
-          "name" : "getFile",
-          "type" : "INPUT_PORT"
-        },
-        "zIndex" : 0
-      }, {
-        "backPressureDataSizeThreshold" : "1 GB",
-        "backPressureObjectThreshold" : 10000,
-        "bends" : [ ],
-        "componentType" : "CONNECTION",
-        "destination" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
           "id" : "0b2eb48a-49e4-3201-b44a-ba1572a98fce",
           "name" : "PutS3ObjectMinIO",
           "type" : "PROCESSOR"
@@ -679,126 +650,6 @@
           "id" : "023b66c5-05d0-3688-a16c-788548a7b850",
           "name" : "getFile",
           "type" : "INPUT_PORT"
-        },
-        "zIndex" : 0
-      }, {
-        "backPressureDataSizeThreshold" : "1 GB",
-        "backPressureObjectThreshold" : 10000,
-        "bends" : [ ],
-        "componentType" : "CONNECTION",
-        "destination" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "baf6540c-e285-3a28-b64a-a1ddf009cbf7",
-          "name" : "TagS3Object",
-          "type" : "PROCESSOR"
-        },
-        "flowFileExpiration" : "0 sec",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "19256e12-82a2-3605-9737-e8be1d48b1c6",
-        "labelIndex" : 0,
-        "loadBalanceCompression" : "DO_NOT_COMPRESS",
-        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-        "name" : "",
-        "partitioningAttribute" : "",
-        "prioritizers" : [ ],
-        "selectedRelationships" : [ "success" ],
-        "source" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "fceb6088-e766-3554-b431-b4b97bc858a1",
-          "name" : "MyProcessor",
-          "type" : "PROCESSOR"
-        },
-        "zIndex" : 0
-      }, {
-        "backPressureDataSizeThreshold" : "1 GB",
-        "backPressureObjectThreshold" : 10000,
-        "bends" : [ ],
-        "componentType" : "CONNECTION",
-        "destination" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "baf6540c-e285-3a28-b64a-a1ddf009cbf7",
-          "name" : "TagS3Object",
-          "type" : "PROCESSOR"
-        },
-        "flowFileExpiration" : "0 sec",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "a785a702-926d-35a1-a6c6-f463a66b0e75",
-        "labelIndex" : 0,
-        "loadBalanceCompression" : "DO_NOT_COMPRESS",
-        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-        "name" : "",
-        "partitioningAttribute" : "",
-        "prioritizers" : [ ],
-        "selectedRelationships" : [ "success" ],
-        "source" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "b71867dd-7839-347a-bbc6-b5bce8450290",
-          "name" : "PutS3ObjectMinIO_new",
-          "type" : "PROCESSOR"
-        },
-        "zIndex" : 0
-      }, {
-        "backPressureDataSizeThreshold" : "1 GB",
-        "backPressureObjectThreshold" : 10000,
-        "bends" : [ ],
-        "componentType" : "CONNECTION",
-        "destination" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "b71867dd-7839-347a-bbc6-b5bce8450290",
-          "name" : "PutS3ObjectMinIO_new",
-          "type" : "PROCESSOR"
-        },
-        "flowFileExpiration" : "0 sec",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "59f404ae-3bba-3f3e-872a-095a2673fe06",
-        "labelIndex" : 0,
-        "loadBalanceCompression" : "DO_NOT_COMPRESS",
-        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-        "name" : "",
-        "partitioningAttribute" : "",
-        "prioritizers" : [ ],
-        "selectedRelationships" : [ "success" ],
-        "source" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "ee9966b9-5c9c-3748-b098-94619d2c3345",
-          "name" : "UpdateAttribute",
-          "type" : "PROCESSOR"
-        },
-        "zIndex" : 0
-      }, {
-        "backPressureDataSizeThreshold" : "1 GB",
-        "backPressureObjectThreshold" : 10000,
-        "bends" : [ ],
-        "componentType" : "CONNECTION",
-        "destination" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "d314cacd-e7d4-3fec-89fa-596ee64c2fa7",
-          "name" : "Funnel",
-          "type" : "FUNNEL"
-        },
-        "flowFileExpiration" : "0 sec",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "54b34a08-970a-3814-a59d-b5ecf6c2c69c",
-        "labelIndex" : 0,
-        "loadBalanceCompression" : "DO_NOT_COMPRESS",
-        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-        "name" : "",
-        "partitioningAttribute" : "",
-        "prioritizers" : [ ],
-        "selectedRelationships" : [ "original" ],
-        "source" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "b71867dd-7839-347a-bbc6-b5bce8450290",
-          "name" : "PutS3ObjectMinIO_new",
-          "type" : "PROCESSOR"
         },
         "zIndex" : 0
       }, {
@@ -857,69 +708,6 @@
           "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
           "id" : "baf6540c-e285-3a28-b64a-a1ddf009cbf7",
           "name" : "TagS3Object",
-          "type" : "PROCESSOR"
-        },
-        "zIndex" : 0
-      }, {
-        "backPressureDataSizeThreshold" : "1 GB",
-        "backPressureObjectThreshold" : 10000,
-        "bends" : [ ],
-        "componentType" : "CONNECTION",
-        "destination" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "fceb6088-e766-3554-b431-b4b97bc858a1",
-          "name" : "MyProcessor",
-          "type" : "PROCESSOR"
-        },
-        "flowFileExpiration" : "0 sec",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "06d44f34-8c87-3ac0-9ef7-95c51d7d1169",
-        "labelIndex" : 0,
-        "loadBalanceCompression" : "DO_NOT_COMPRESS",
-        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-        "name" : "",
-        "partitioningAttribute" : "",
-        "prioritizers" : [ ],
-        "selectedRelationships" : [ "success" ],
-        "source" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "ee9966b9-5c9c-3748-b098-94619d2c3345",
-          "name" : "UpdateAttribute",
-          "type" : "PROCESSOR"
-        },
-        "zIndex" : 0
-      }, {
-        "backPressureDataSizeThreshold" : "1 GB",
-        "backPressureObjectThreshold" : 10000,
-        "bends" : [ {
-          "x" : -312.0,
-          "y" : -536.0
-        } ],
-        "componentType" : "CONNECTION",
-        "destination" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "d314cacd-e7d4-3fec-89fa-596ee64c2fa7",
-          "name" : "Funnel",
-          "type" : "FUNNEL"
-        },
-        "flowFileExpiration" : "0 sec",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "00485357-1b7c-30d3-b658-507587230ca7",
-        "labelIndex" : 0,
-        "loadBalanceCompression" : "DO_NOT_COMPRESS",
-        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-        "name" : "",
-        "partitioningAttribute" : "",
-        "prioritizers" : [ ],
-        "selectedRelationships" : [ "failure" ],
-        "source" : {
-          "comments" : "",
-          "groupId" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-          "id" : "b71867dd-7839-347a-bbc6-b5bce8450290",
-          "name" : "PutS3ObjectMinIO_new",
           "type" : "PROCESSOR"
         },
         "zIndex" : 0
@@ -1266,16 +1054,8 @@
         "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
         "identifier" : "308a2cda-5ce3-3812-9b4c-3a8189dc8a51",
         "position" : {
-          "x" : -2454.0093089027487,
-          "y" : -468.28666630240764
-        }
-      }, {
-        "componentType" : "FUNNEL",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "d314cacd-e7d4-3fec-89fa-596ee64c2fa7",
-        "position" : {
-          "x" : -80.0,
-          "y" : -456.0
+          "x" : -1520.0,
+          "y" : -464.0
         }
       } ],
       "groupIdentifier" : "flow-contents-group",
@@ -1307,8 +1087,8 @@
         "name" : "output",
         "portFunction" : "STANDARD",
         "position" : {
-          "x" : -816.0,
-          "y" : 176.0
+          "x" : -848.0,
+          "y" : 192.0
         },
         "scheduledState" : "ENABLED",
         "type" : "OUTPUT_PORT"
@@ -1338,8 +1118,8 @@
         "name" : "TagS3Object",
         "penaltyDuration" : "30 sec",
         "position" : {
-          "x" : -864.0,
-          "y" : -104.0
+          "x" : -904.0,
+          "y" : -144.0
         },
         "properties" : {
           "Endpoint Override URL" : "#{MinIO_URL}",
@@ -1478,168 +1258,6 @@
         "backoffMechanism" : "PENALIZE_FLOWFILE",
         "bulletinLevel" : "WARN",
         "bundle" : {
-          "artifact" : "python-extensions",
-          "group" : "org.apache.nifi",
-          "version" : "0.1.0-SNAPSHOT"
-        },
-        "comments" : "",
-        "componentType" : "PROCESSOR",
-        "concurrentlySchedulableTaskCount" : 1,
-        "executionNode" : "ALL",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "b71867dd-7839-347a-bbc6-b5bce8450290",
-        "maxBackoffPeriod" : "10 mins",
-        "name" : "PutS3ObjectMinIO_new",
-        "penaltyDuration" : "30 sec",
-        "position" : {
-          "x" : -936.0,
-          "y" : -512.0
-        },
-        "properties" : {
-          "MinIO Endpoint" : "#{MinIO_URL}",
-          "Metadata" : "autor:#{metadata_author},from:#{metadata_source},format:${mime.type},category:new_data,status:active,version:1.0,date:2024-12-17,language:pt,encoding:UTF-8,license:CC-BY,publisher:example_publisher,rights:public,source:internal,type:dataset,description:sample data,created_by:user123,modified_by:admin,size:15MB,checksum:abc123,tags:important,priority:high,access:restricted,backup:yes,retention:5 years,reviewed_by:reviewer1,approved:true,last_modified:2024-12-16,created_on:2024-12-01,confidentiality:high,integrity:intact,availability:99.9%,compliance:GDPR,sensitivity:medium,environment:production,region:us-east-1,content_type:text/xml,verified:true,encryption:AES256,compression:gzip,format_version:2.0,schema:v1.2,data_quality:high,data_source:API,data_owner:team_xyz,data_steward:steward_abc,data_classification:confidential,data_retention:7 years,data_archival:yes,data_purge:no,data_sharing:internal,data_usage:analytics,data_processing:batch,data_storage:cloud,data_transfer:secure,data_access:role_based,data_audit:quarterly,data_backup:daily,data_recovery:24 hours,data_protection:high,data_privacy:compliant,data_governance:enforced,data_policy:strict",
-          "Region Name" : "us-east-1",
-          "Content Type" : "text/xml",
-          "Bucket Name" : "#{bucket_name}"
-        },
-        "propertyDescriptors" : {
-          "Access Key" : {
-            "displayName" : "Access Key",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Access Key",
-            "sensitive" : true
-          },
-          "MinIO Endpoint" : {
-            "displayName" : "MinIO Endpoint",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "MinIO Endpoint",
-            "sensitive" : false
-          },
-          "Metadata" : {
-            "displayName" : "Metadata",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Metadata",
-            "sensitive" : false
-          },
-          "Region Name" : {
-            "displayName" : "Region Name",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Region Name",
-            "sensitive" : false
-          },
-          "Content Type" : {
-            "displayName" : "Content Type",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Content Type",
-            "sensitive" : false
-          },
-          "Secret Key" : {
-            "displayName" : "Secret Key",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Secret Key",
-            "sensitive" : true
-          },
-          "Bucket Name" : {
-            "displayName" : "Bucket Name",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Bucket Name",
-            "sensitive" : false
-          }
-        },
-        "retriedRelationships" : [ ],
-        "retryCount" : 10,
-        "runDurationMillis" : 25,
-        "scheduledState" : "ENABLED",
-        "schedulingPeriod" : "0 sec",
-        "schedulingStrategy" : "TIMER_DRIVEN",
-        "style" : { },
-        "type" : "PutS3ObjectMinIO_new",
-        "yieldDuration" : "1 sec"
-      }, {
-        "autoTerminatedRelationships" : [ ],
-        "backoffMechanism" : "PENALIZE_FLOWFILE",
-        "bulletinLevel" : "WARN",
-        "bundle" : {
-          "artifact" : "nifi-update-attribute-nar",
-          "group" : "org.apache.nifi",
-          "version" : "2.0.0"
-        },
-        "comments" : "",
-        "componentType" : "PROCESSOR",
-        "concurrentlySchedulableTaskCount" : 1,
-        "executionNode" : "ALL",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "ee9966b9-5c9c-3748-b098-94619d2c3345",
-        "maxBackoffPeriod" : "10 mins",
-        "name" : "UpdateAttribute",
-        "penaltyDuration" : "30 sec",
-        "position" : {
-          "x" : -912.0,
-          "y" : -760.0
-        },
-        "properties" : {
-          "filename" : "${now():format('yyyy/MM/dd')}/${uuid}",
-          "Store State" : "Do not store state",
-          "canonical-value-lookup-cache-size" : "100"
-        },
-        "propertyDescriptors" : {
-          "Delete Attributes Expression" : {
-            "displayName" : "Delete Attributes Expression",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Delete Attributes Expression",
-            "sensitive" : false
-          },
-          "filename" : {
-            "displayName" : "filename",
-            "dynamic" : true,
-            "identifiesControllerService" : false,
-            "name" : "filename",
-            "sensitive" : false
-          },
-          "Store State" : {
-            "displayName" : "Store State",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Store State",
-            "sensitive" : false
-          },
-          "canonical-value-lookup-cache-size" : {
-            "displayName" : "Cache Value Lookup Cache Size",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "canonical-value-lookup-cache-size",
-            "sensitive" : false
-          },
-          "Stateful Variables Initial Value" : {
-            "displayName" : "Stateful Variables Initial Value",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Stateful Variables Initial Value",
-            "sensitive" : false
-          }
-        },
-        "retriedRelationships" : [ ],
-        "retryCount" : 10,
-        "runDurationMillis" : 25,
-        "scheduledState" : "ENABLED",
-        "schedulingPeriod" : "0 sec",
-        "schedulingStrategy" : "TIMER_DRIVEN",
-        "style" : { },
-        "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
-        "yieldDuration" : "1 sec"
-      }, {
-        "autoTerminatedRelationships" : [ ],
-        "backoffMechanism" : "PENALIZE_FLOWFILE",
-        "bulletinLevel" : "WARN",
-        "bundle" : {
           "artifact" : "nifi-PutS3ObjectMinIO-nar",
           "group" : "com.mitmynid.nifi",
           "version" : "2.0.0"
@@ -1654,8 +1272,8 @@
         "name" : "PutS3ObjectMinIO",
         "penaltyDuration" : "30 sec",
         "position" : {
-          "x" : -2104.0,
-          "y" : -528.0
+          "x" : -912.0,
+          "y" : -576.0
         },
         "properties" : {
           "MinIO Endpoint" : "#{MinIO_URL}",
@@ -1663,7 +1281,7 @@
           "Content Type" : "text/xml",
           "Region" : "us-east-1",
           "Bucket Name" : "#{bucket_name}",
-          "Object Key" : "${now():format('yyyy/MM/dd')}/${uuid}"
+          "Object Key" : "newdata/${now():format('yyyy/MM/dd')}/${uuid}"
         },
         "propertyDescriptors" : {
           "Access Key" : {
@@ -1731,95 +1349,6 @@
         "schedulingStrategy" : "TIMER_DRIVEN",
         "style" : { },
         "type" : "com.mitmynid.nifi.processors.PutS3ObjectMinIO.PutS3ObjectMinIO",
-        "yieldDuration" : "1 sec"
-      }, {
-        "autoTerminatedRelationships" : [ "failure" ],
-        "backoffMechanism" : "PENALIZE_FLOWFILE",
-        "bulletinLevel" : "WARN",
-        "bundle" : {
-          "artifact" : "nifi-MyProcessor-nar",
-          "group" : "org.mitmynid.pt",
-          "version" : "2.0.0"
-        },
-        "comments" : "",
-        "componentType" : "PROCESSOR",
-        "concurrentlySchedulableTaskCount" : 1,
-        "executionNode" : "ALL",
-        "groupIdentifier" : "3e56b714-0796-3b2d-bcc8-f21bfafd999f",
-        "identifier" : "fceb6088-e766-3554-b431-b4b97bc858a1",
-        "maxBackoffPeriod" : "10 mins",
-        "name" : "MyProcessor",
-        "penaltyDuration" : "30 sec",
-        "position" : {
-          "x" : -1480.0,
-          "y" : -504.0
-        },
-        "properties" : {
-          "MinIO Endpoint" : "#{MinIO_URL}",
-          "Metadata" : "autor:ruben,filename:${filename},mime.type:${mime.type},uuid:${uuid},date:${now():format(\"dd/MM/yyyy\")}",
-          "Content Type" : "text/xml",
-          "Region" : "us-east-1",
-          "Bucket Name" : "#{bucket_name}"
-        },
-        "propertyDescriptors" : {
-          "Access Key" : {
-            "displayName" : "Access Key",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Access Key",
-            "sensitive" : true
-          },
-          "MinIO Endpoint" : {
-            "displayName" : "MinIO Endpoint",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "MinIO Endpoint",
-            "sensitive" : false
-          },
-          "Metadata" : {
-            "displayName" : "Metadata",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Metadata",
-            "sensitive" : false
-          },
-          "Content Type" : {
-            "displayName" : "Content Type",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Content Type",
-            "sensitive" : false
-          },
-          "Secret Key" : {
-            "displayName" : "Secret Key",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Secret Key",
-            "sensitive" : true
-          },
-          "Region" : {
-            "displayName" : "Region",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Region",
-            "sensitive" : false
-          },
-          "Bucket Name" : {
-            "displayName" : "Bucket Name",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Bucket Name",
-            "sensitive" : false
-          }
-        },
-        "retriedRelationships" : [ ],
-        "retryCount" : 10,
-        "runDurationMillis" : 0,
-        "scheduledState" : "ENABLED",
-        "schedulingPeriod" : "0 sec",
-        "schedulingStrategy" : "TIMER_DRIVEN",
-        "style" : { },
-        "type" : "org.mitmynid.pt.processors.MyProcessor.MyProcessor",
         "yieldDuration" : "1 sec"
       } ],
       "remoteProcessGroups" : [ ],
@@ -5881,7 +5410,7 @@
         "name" : "bucket_name",
         "provided" : false,
         "sensitive" : false,
-        "value" : "shipdata"
+        "value" : "rawdata"
       }, {
         "description" : "Autor dos objetos que vão para o MinIO",
         "name" : "metadata_author",
